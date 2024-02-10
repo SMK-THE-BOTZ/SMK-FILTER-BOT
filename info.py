@@ -26,7 +26,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "")
 CACHE_TIME = int(environ.get('CACHE_TIME', 1800))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://telegra.ph/file/be71d9085db80d2caec80.mp4 https://telegra.ph/file/a0c3e5ca67c2d20b1ee1e.jpg https://telegra.ph/file/1c464f51837aed0135c21.jpg https://telegra.ph/file/8ca190d5bf5438a4c8c06.jpg https://telegra.ph/file/a147b333f423f241fe881.jpg https://telegra.ph/file/dc2a635d6a7d23778841d.jpg')).split() #SAMPLE PIC
+PICS = (environ.get('PICS', 'https://telegra.ph/file/a0c3e5ca67c2d20b1ee1e.jpg https://telegra.ph/file/1c464f51837aed0135c21.jpg https://telegra.ph/file/8ca190d5bf5438a4c8c06.jpg https://telegra.ph/file/a147b333f423f241fe881.jpg https://telegra.ph/file/dc2a635d6a7d23778841d.jpg')).split() #SAMPLE PIC
 NOR_IMG = environ.get("NOR_IMG", "https://te.legra.ph/file/a27dc8fe434e6b846b0f8.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://t.me/How_To_Open_Linkl")
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
@@ -48,8 +48,8 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://jyotimaurya891824:iwO3ur55tx60E0w1@cluster0.do0yv56.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "jyotimaurya891824")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://snknanlsnoj:iwO3ur55tx60E0w1@cluster0.do0yv56.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
@@ -61,8 +61,8 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/vj_bot_disscussion')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/vj_bots')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/SMK_TALKS')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/SMK_Talks')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/How_To_Open_Linkl')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'Hello My Dear Friends ❤️')
